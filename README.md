@@ -1,31 +1,28 @@
 # pool-rs
+A Rust library for efficient pool management.
 
 ## Description
-`pool-rs` is a Rust library that provides fast, safe, and ergonomic pool management utilities. It is a component of the **Cocapn Fleet** (github.com/SuperInstance).
+Part of the Cocapn Fleet (github.com/SuperInstance), pool-rs provides a high‑performance pool management system designed for modern applications.
 
 ## Usage
-Add the crate to your project:
-
+Add `pool-rs` to your `Cargo.toml`:
 ```toml
 [dependencies]
 pool-rs = "0.1.0"
 ```
-
-Import and use it in Rust code:
-
+Use the pool in your Rust code:
 ```rust
 use pool_rs::Pool;
 
 fn main() {
-    let mut pool = Pool::new();
-    // pool operations here
+    let pool = Pool::new(10);
+    // ...
 }
 ```
 
 ## Related
-- **Cocapn Fleet** – the larger project this library belongs to: https://github.com/SuperInstance  
-- Documentation & design notes: [DOCKSIDE-EXAM.md](DOCKSIDE-EXAM.md)  
-- Research materials: see the `research/` directory  
+- [Cocapn Fleet](https://github.com/SuperInstance)
+- [Documentation](DOCKSIDE-EXAM.md)
 
 ## License
-Distributed under the terms of the [LICENSE](LICENSE) file.
+This project is licensed under the terms of the [LICENSE](LICENSE) file.
